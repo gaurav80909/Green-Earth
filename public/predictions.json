@@ -1,0 +1,191 @@
+[
+    {
+        "year": 2027,
+        "temperature": 33.0,
+        "humidity": 62.4,
+        "rainfall_trend": 825.4,
+        "heatwave_probability": 0.5,
+        "anomaly_score": 1.24,
+        "risk": "Low"
+    },
+    {
+        "year": 2028,
+        "temperature": 32.8,
+        "humidity": 62.1,
+        "rainfall_trend": 908.0,
+        "heatwave_probability": 0.48,
+        "anomaly_score": 1.03,
+        "risk": "Low"
+    },
+    {
+        "year": 2029,
+        "temperature": 32.5,
+        "humidity": 62.5,
+        "rainfall_trend": 878.9,
+        "heatwave_probability": 0.45,
+        "anomaly_score": 1.06,
+        "risk": "Low"
+    },
+    {
+        "year": 2030,
+        "temperature": 33.3,
+        "humidity": 58.2,
+        "rainfall_trend": 822.9,
+        "heatwave_probability": 0.53,
+        "anomaly_score": 0.8,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2031,
+        "temperature": 33.9,
+        "humidity": 60.8,
+        "rainfall_trend": 896.6,
+        "heatwave_probability": 0.59,
+        "anomaly_score": 0.57,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2032,
+        "temperature": 33.5,
+        "humidity": 59.0,
+        "rainfall_trend": 847.4,
+        "heatwave_probability": 0.55,
+        "anomaly_score": 0.52,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2033,
+        "temperature": 33.4,
+        "humidity": 61.8,
+        "rainfall_trend": 836.7,
+        "heatwave_probability": 0.54,
+        "anomaly_score": 0.77,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2034,
+        "temperature": 32.9,
+        "humidity": 57.6,
+        "rainfall_trend": 823.3,
+        "heatwave_probability": 0.49,
+        "anomaly_score": 1.23,
+        "risk": "Low"
+    },
+    {
+        "year": 2035,
+        "temperature": 33.8,
+        "humidity": 62.5,
+        "rainfall_trend": 815.8,
+        "heatwave_probability": 0.58,
+        "anomaly_score": 1.52,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2036,
+        "temperature": 33.6,
+        "humidity": 57.9,
+        "rainfall_trend": 809.8,
+        "heatwave_probability": 0.56,
+        "anomaly_score": 1.15,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2037,
+        "temperature": 34.2,
+        "humidity": 59.2,
+        "rainfall_trend": 822.7,
+        "heatwave_probability": 0.62,
+        "anomaly_score": 1.36,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2038,
+        "temperature": 33.7,
+        "humidity": 63.3,
+        "rainfall_trend": 827.8,
+        "heatwave_probability": 0.57,
+        "anomaly_score": 1.58,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2039,
+        "temperature": 33.9,
+        "humidity": 60.4,
+        "rainfall_trend": 814.3,
+        "heatwave_probability": 0.59,
+        "anomaly_score": 0.98,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2040,
+        "temperature": 33.8,
+        "humidity": 55.2,
+        "rainfall_trend": 835.2,
+        "heatwave_probability": 0.58,
+        "anomaly_score": 1.16,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2041,
+        "temperature": 34.5,
+        "humidity": 57.6,
+        "rainfall_trend": 813.6,
+        "heatwave_probability": 0.65,
+        "anomaly_score": 1.1,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2042,
+        "temperature": 34.4,
+        "humidity": 57.4,
+        "rainfall_trend": 800.9,
+        "heatwave_probability": 0.64,
+        "anomaly_score": 0.76,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2043,
+        "temperature": 34.9,
+        "humidity": 59.3,
+        "rainfall_trend": 869.2,
+        "heatwave_probability": 0.69,
+        "anomaly_score": 1.1,
+        "risk": "High"
+    },
+    {
+        "year": 2044,
+        "temperature": 34.1,
+        "humidity": 56.3,
+        "rainfall_trend": 861.0,
+        "heatwave_probability": 0.61,
+        "anomaly_score": 1.52,
+        "risk": "Moderate"
+    },
+    {
+        "year": 2045,
+        "temperature": 35.1,
+        "humidity": 61.3,
+        "rainfall_trend": 814.7,
+        "heatwave_probability": 0.71,
+        "anomaly_score": 1.23,
+        "risk": "High"
+    },
+    {
+        "year": 2046,
+        "temperature": 35.0,
+        "humidity": 57.3,
+        "rainfall_trend": 762.0,
+        "heatwave_probability": 0.7,
+        "anomaly_score": 1.49,
+        "risk": "High"
+    },
+    {
+        "year": 2047,
+        "temperature": 34.3,
+        "humidity": 58.4,
+        "rainfall_trend": 840.2,
+        "heatwave_probability": 0.63,
+        "anomaly_score": 1.33,
+        "risk": "Moderate"
+    }
+]

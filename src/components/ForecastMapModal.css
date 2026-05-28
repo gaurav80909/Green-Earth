@@ -1,0 +1,129 @@
+.forecast-map-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.fm-sidebar {
+  width: 300px;
+  background: rgba(8, 12, 18, 0.95);
+  border-right: 1px solid rgba(0, 255, 213, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  z-index: 10;
+  box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+}
+
+.fm-close {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: #fff; background: transparent; border: none; cursor: pointer;
+  font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 2rem; opacity: 0.7; transition: opacity 0.3s;
+}
+.fm-close:hover { opacity: 1; color: #ff003c; }
+
+.fm-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffd5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(0, 255, 213, 0.5);
+}
+
+.fm-layers-title {
+  font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+}
+
+.fm-layer-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fm-layer-btn:hover { background: rgba(0, 255, 213, 0.1); border-color: rgba(0, 255, 213, 0.3); }
+.fm-layer-btn.active { background: rgba(0, 255, 213, 0.2); border-color: #00ffd5; color: #00ffd5; box-shadow: 0 0 15px rgba(0, 255, 213, 0.2); }
+
+.fm-main {
+  flex: 1;
+  position: relative;
+  display: flex; flex-direction: column;
+}
+
+.fm-map-container {
+  flex: 1;
+  position: relative;
+  display: flex; justify-content: center; align-items: center;
+  background: radial-gradient(circle at center, rgba(0, 216, 255, 0.05) 0%, transparent 60%);
+}
+
+.fm-earth {
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  position: relative;
+  animation: slow-spin 60s linear infinite;
+  display: flex; justify-content: center; align-items: center;
+  box-shadow: inset 0 0 50px rgba(0, 255, 213, 0.5), 0 0 100px rgba(0, 255, 213, 0.2);
+  border: 1px solid rgba(0, 255, 213, 0.3);
+}
+
+@keyframes slow-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.fm-hotspot {
+  position: absolute;
+  width: 15px; height: 15px;
+  background: #ff003c;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ff003c;
+  animation: pulse-red 2s infinite;
+  cursor: pointer;
+}
+
+.fm-hotspot::after {
+  content: ''; position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px;
+  border: 1px solid #ff003c; border-radius: 50%; animation: ripple 2s infinite;
+}
+
+@keyframes ripple { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(3); opacity: 0; } }
+
+.fm-tooltip {
+  position: absolute;
+  background: rgba(10, 15, 25, 0.9);
+  border: 1px solid #ff003c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(255, 0, 60, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  width: 220px;
+  pointer-events: none;
+}
+
+.fm-timeline {
+  height: 100px;
+  background: rgba(8, 12, 18, 0.9);
+  border-top: 1px solid rgba(0, 255, 213, 0.2);
+  display: flex; align-items: center; padding: 0 3rem;
+  gap: 2rem;
+}
+
+.fm-slider-track { flex: 1; height: 4px; background: rgba(255, 255, 255, 0.1); position: relative; border-radius: 2px; }
+.fm-slider-fill { position: absolute; top: 0; left: 0; height: 100%; background: #00ffd5; box-shadow: 0 0 10px #00ffd5; }
+.fm-slider-thumb { position: absolute; top: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; background: #fff; border: 3px solid #00ffd5; border-radius: 50%; box-shadow: 0 0 15px #00ffd5; cursor: pointer; }
+
+.fm-year-markers { display: flex; justify-content: space-between; position: absolute; top: 15px; left: 0; right: 0; color: rgba(255, 255, 255, 0.5); font-size: 0.8rem; font-family: monospace; }
+.fm-year-markers span.active { color: #00ffd5; font-weight: bold; text-shadow: 0 0 5px #00ffd5; }
