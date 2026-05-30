@@ -28,6 +28,7 @@
   --fc-bg: rgba(10,15,30,0.7);
   --fc-val-color: #ffffff;
   --globe-opacity: 0.85;
+  --globe-blend-mode: screen;
   --panel-ttl-color: #ffffff;
   --mc-bg: rgba(255,255,255,0.03);
   --mc-hover-shadow: 0 15px 35px rgba(0,0,0,0.4);
@@ -59,7 +60,8 @@
   --hero-sub-color: #475569;
   --fc-bg: rgba(255,255,255,0.85);
   --fc-val-color: #0f172a;
-  --globe-opacity: 0.12;
+  --globe-opacity: 0.45;
+  --globe-blend-mode: darken;
   --panel-ttl-color: #1e293b;
   --mc-bg: #ffffff;
   --mc-hover-shadow: 0 15px 35px rgba(0,0,0,0.08);
@@ -595,7 +597,7 @@ body {
 .hp-hero { position:relative; min-height:300px; display:flex; align-items:center; border-radius:16px; margin-bottom:0.5rem; }
 
 /* Massive background globe */
-.hp-globe-wrap { position:absolute; left:50%; transform:translateX(-50%); top:0; width:1000px; height:1000px; pointer-events:none; z-index:0; mix-blend-mode:screen; opacity:var(--globe-opacity); mask-image:radial-gradient(circle at center, black 55%, transparent 70%); -webkit-mask-image:radial-gradient(circle at center, black 55%, transparent 70%); }
+.hp-globe-wrap { position:absolute; left:50%; transform:translateX(-50%); top:0; width:1000px; height:1000px; pointer-events:none; z-index:0; mix-blend-mode:var(--globe-blend-mode); opacity:var(--globe-opacity); mask-image:radial-gradient(circle at center, black 55%, transparent 70%); -webkit-mask-image:radial-gradient(circle at center, black 55%, transparent 70%); }
 .hp-globe-img { width:100%; height:100%; object-fit:cover; animation:spin 180s linear infinite; }
 
 /* Hero floating elements */
